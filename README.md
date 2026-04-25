@@ -87,10 +87,3 @@ A single seed (`SEED = 42` in `config.py`) is set across PyTorch and CUDA. For a
 - **Embedding extraction**: needs Wav2Vec2 forward passes on 1,440 clips. ~15 min on a modern GPU, ~1–2 hours on CPU.
 - **Fine-tuning**: needs at least 8GB GPU VRAM (16GB+ recommended). On Colab/Kaggle T4 GPUs this works fine. On CPU, fine-tuning is impractical (many hours per epoch).
 
-## Suggested extensions
-
-If you have time after the main two-way comparison:
-
-1. **LoRA condition** — add a third condition using parameter-efficient fine-tuning. Use Hugging Face's `peft` library to wrap the encoder. Updates ~0.5% of the params, often nearly matches full fine-tuning, and dramatically reduces overfitting risk.
-2. **Multi-seed runs** — wrap `main()` in a loop over 3–5 seeds, report mean ± std. Makes the comparison statistically meaningful instead of anecdotal.
-3. **Per-actor breakdown** — analyze test-set results by individual held-out actor. High variance across actors signals that the model is brittle to speaker characteristics.
