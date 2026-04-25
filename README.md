@@ -1,2 +1,0 @@
-# VibeCheck-
-Speech emotion classifier 
