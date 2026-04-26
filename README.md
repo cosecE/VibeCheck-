@@ -156,7 +156,7 @@ RAVDESS is **not included in this repo** (it's in `.gitignore`). The training no
 - 📜 License: [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 - 📄 Citation: Livingstone, S. R., & Russo, F. A. (2018). *The Ryerson Audio-Visual Database of Emotional Speech and Song (RAVDESS): A dynamic, multimodal set of facial and vocal expressions in North American English.* PLoS ONE, 13(5), e0196391.
 
-##Demo Presentation
+## Demo Presentation
 
 - https://www.youtube.com/watch?v=ZJFy6hIHQuc
 ---
