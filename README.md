@@ -85,5 +85,5 @@ A single seed (`SEED = 42` in `config.py`) is set across PyTorch and CUDA. For a
 
 - **Frozen condition**: trivial. Will run on CPU in seconds once embeddings are cached.
 - **Embedding extraction**: needs Wav2Vec2 forward passes on 1,440 clips. ~15 min on a modern GPU, ~1–2 hours on CPU.
-- **Fine-tuning**: needs at least 8GB GPU VRAM (16GB+ recommended). On Colab/Kaggle T4 GPUs this works fine. On CPU, fine-tuning is impractical (many hours per epoch).
+- **Fine-tuning**: needs at least 8GB GPU VRAM (16GB+ recommended). On Colab T4 GPUs work fine. On CPU, fine-tuning is impractical (many hours per epoch).
 
